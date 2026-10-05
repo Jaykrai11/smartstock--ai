@@ -1,0 +1,20 @@
+# data (never commit raw/processed datasets)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+# training byproducts
+training/outputs/mlflow.db
+mlruns/
+mlartifacts/
+training/outputs/*.parquet
+# python / node
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+node_modules/
+.next/
+frontend/.env.local
+.env
+*.env.local

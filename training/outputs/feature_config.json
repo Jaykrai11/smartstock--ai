@@ -1,0 +1,81 @@
+{
+  "features": [
+    "lag1",
+    "lag7",
+    "lag14",
+    "lag28",
+    "roll_mean_7",
+    "roll_mean_14",
+    "roll_mean_28",
+    "roll_mean_56",
+    "roll_std_7",
+    "roll_std_14",
+    "roll_std_28",
+    "zero_frac_28",
+    "same_dow_mean4",
+    "price",
+    "price_rel_56",
+    "price_ratio_target",
+    "h",
+    "t_dow",
+    "t_month",
+    "t_week",
+    "t_quarter",
+    "t_dom",
+    "t_event_flag",
+    "t_event_type",
+    "item_idx",
+    "store_idx",
+    "dept_idx",
+    "cat_idx"
+  ],
+  "categorical": [
+    "item_idx",
+    "store_idx",
+    "dept_idx",
+    "cat_idx"
+  ],
+  "max_horizon": 28,
+  "maps": {
+    "item_id": {
+      "FOODS_1_001": 0,
+      "FOODS_1_002": 1,
+      "FOODS_1_003": 2,
+      "FOODS_1_004": 3,
+      "FOODS_1_005": 4,
+      "FOODS_2_001": 5,
+      "FOODS_2_002": 6,
+      "FOODS_2_003": 7,
+      "FOODS_2_004": 8,
+      "FOODS_2_005": 9,
+      "HOBBIES_1_001": 10,
+      "HOBBIES_1_002": 11,
+      "HOBBIES_1_003": 12,
+      "HOBBIES_1_004": 13,
+      "HOBBIES_1_005": 14,
+      "HOUSEHOLD_1_001": 15,
+      "HOUSEHOLD_1_002": 16,
+      "HOUSEHOLD_1_003": 17,
+      "HOUSEHOLD_1_004": 18,
+      "HOUSEHOLD_1_005": 19
+    },
+    "store_id": {
+      "CA_1": 0,
+      "CA_2": 1,
+      "TX_1": 2,
+      "WI_1": 3
+    },
+    "dept_id": {
+      "FOODS_1": 0,
+      "FOODS_2": 1,
+      "HOBBIES_1": 2,
+      "HOUSEHOLD_1": 3
+    },
+    "cat_id": {
+      "FOODS": 0,
+      "HOBBIES": 1,
+      "HOUSEHOLD": 2
+    }
+  },
+  "history_days_required": 120
+}

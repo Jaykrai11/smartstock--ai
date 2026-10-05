@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { background: #F1F4F7; color: #10243E; }
+body { font-feature-settings: "tnum" 1, "lnum" 1; }
+:focus-visible { outline: 2px solid #0E7C7B; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+.recharts-text { font-size: 11px; }

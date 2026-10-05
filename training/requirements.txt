@@ -1,0 +1,9 @@
+-r ../backend/requirements.txt
+pyarrow==25.0.1
+mlflow==3.16.1
+duckdb==1.5.6
+matplotlib==3.10.8
+nbformat==5.11.1
+jupyter
+pytest
+httpx

@@ -1,0 +1,19 @@
+# Pushes ./backend to your Hugging Face Docker Space whenever backend/ changes on main.
+# Setup: GitHub repo secret HF_TOKEN (write token) + repo variable HF_SPACE = "<hf-username>/smartstock-ai-api"
+name: deploy-backend-to-hugging-face
+on:
+  push:
+    branches: [main]
+    paths: ["backend/**"]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - name: Push backend/ subtree to the Space
+        env: { HF_TOKEN: "${{ secrets.HF_TOKEN }}", HF_SPACE: "${{ vars.HF_SPACE }}" }
+        run: |
+          git config user.email "ci@users.noreply.github.com"; git config user.name "ci"
+          git subtree split --prefix=backend -b hf-deploy
+          git push --force "https://user:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE}" hf-deploy:main

@@ -1,0 +1,8 @@
+# Serving-only dependencies (training deps live in training/requirements.txt)
+fastapi==0.142.2
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+numpy==2.4.4
+pandas==3.0.2
+lightgbm==4.7.0
+pulp==2.9.0
