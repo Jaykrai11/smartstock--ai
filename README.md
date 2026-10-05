@@ -4,6 +4,8 @@ SmartStock AI is a demand-forecasting and inventory-planning demo. It combines a
 LightGBM forecast service, safety-stock calculations, a PuLP allocation optimizer,
 and a Next.js dashboard.
 
+**Live dashboard:** [smartstock-nryo77q9e-jaykrai111-8746s-projects.vercel.app](https://smartstock-nryo77q9e-jaykrai111-8746s-projects.vercel.app/)
+
 The repository includes a small **synthetic M5-format dataset** and generated
 model artifacts so the demo can run without downloading proprietary or external
 datasets. The operational inputs (lead times, costs, supply, capacity, and
