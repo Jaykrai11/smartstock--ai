@@ -1,6 +1,6 @@
 # API reference
 
-Base URL: `http://localhost:7860` locally, or your Hugging Face Space URL. Interactive docs: `/docs`.
+Base URL: `http://localhost:7860` locally, or your deployed Render service URL. Interactive docs: `/docs`.
 
 | Method | Path | Body | Returns |
 |---|---|---|---|

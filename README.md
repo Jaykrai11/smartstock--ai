@@ -87,16 +87,14 @@ configuration.
 
 ## API and deployment
 
-The main API endpoints are documented in [docs/api.md](docs/api.md). The
-backend also includes [backend/README.md](backend/README.md) with the
-Hugging Face Docker Space configuration.
+The main API endpoints are documented in [docs/api.md](docs/api.md).
 
-For a Hugging Face deployment:
+For a Render backend deployment:
 
-1. Create a Docker Space.
-2. Push the contents of `backend/` to the Space, or configure the included
-   GitHub Actions workflow with `HF_TOKEN` and `HF_SPACE`.
-3. Set `ALLOWED_ORIGINS` to the deployed frontend URL.
+1. Create a Render Web Service from this repository.
+2. Set the service root directory to `backend`.
+3. Use the Docker runtime and expose port `7860`.
+4. Set `ALLOWED_ORIGINS` to the deployed frontend URL.
 
 For a Vercel deployment:
 
