@@ -1,112 +1,112 @@
 {
   "assumptions": "lead times 2-7d, holding 1% of price/unit/day, stockout 50% of price/unit, transport 3% of price/unit (SIMULATED)",
   "window": {
-    "origin": "2024-02-29",
+    "origin": "2016-01-03",
     "days": 112,
     "review_days": 7,
-    "n_series": 80
+    "n_series": 150
   },
   "results": {
     "service_level_0.9": {
       "cover_days": {
-        "fill_rate": 0.9414,
-        "stockout_day_rate": 0.0504,
-        "avg_inventory_units": 1282.5,
-        "holding_cost": 11257.1,
-        "stockout_cost": 4463.9,
-        "transport_cost": 4084.7,
-        "total_cost": 19805.7
+        "fill_rate": 0.9394,
+        "stockout_day_rate": 0.0593,
+        "avg_inventory_units": 12312.8,
+        "holding_cost": 26156.1,
+        "stockout_cost": 10505.6,
+        "transport_cost": 10347.4,
+        "total_cost": 47009.1
       },
       "classic_ss": {
-        "fill_rate": 0.9576,
-        "stockout_day_rate": 0.0354,
-        "avg_inventory_units": 1436.6,
-        "holding_cost": 12581.6,
-        "stockout_cost": 3201.3,
-        "transport_cost": 4196.1,
-        "total_cost": 19979.0
+        "fill_rate": 0.9387,
+        "stockout_day_rate": 0.061,
+        "avg_inventory_units": 11082.6,
+        "holding_cost": 23381.6,
+        "stockout_cost": 10804.3,
+        "transport_cost": 10230.3,
+        "total_cost": 44416.2
       },
       "smartstock": {
-        "fill_rate": 0.9643,
-        "stockout_day_rate": 0.0304,
-        "avg_inventory_units": 1291.5,
-        "holding_cost": 11341.8,
-        "stockout_cost": 2736.5,
-        "transport_cost": 4178.2,
-        "total_cost": 18256.5
+        "fill_rate": 0.9536,
+        "stockout_day_rate": 0.0413,
+        "avg_inventory_units": 11256.2,
+        "holding_cost": 22758.4,
+        "stockout_cost": 8849.9,
+        "transport_cost": 10206.0,
+        "total_cost": 41814.2
       },
       "smartstock_vs_classic": {
-        "total_cost_change_pct": -8.62,
-        "fill_rate_change_pts": 0.67,
-        "avg_inventory_change_pct": -10.1
+        "total_cost_change_pct": -5.86,
+        "fill_rate_change_pts": 1.49,
+        "avg_inventory_change_pct": 1.57
       }
     },
     "service_level_0.95": {
       "cover_days": {
-        "fill_rate": 0.9414,
-        "stockout_day_rate": 0.0504,
-        "avg_inventory_units": 1282.5,
-        "holding_cost": 11257.1,
-        "stockout_cost": 4463.9,
-        "transport_cost": 4084.7,
-        "total_cost": 19805.7
+        "fill_rate": 0.9394,
+        "stockout_day_rate": 0.0593,
+        "avg_inventory_units": 12312.8,
+        "holding_cost": 26156.1,
+        "stockout_cost": 10505.6,
+        "transport_cost": 10347.4,
+        "total_cost": 47009.1
       },
       "classic_ss": {
-        "fill_rate": 0.9698,
-        "stockout_day_rate": 0.0253,
-        "avg_inventory_units": 1618.3,
-        "holding_cost": 14171.5,
-        "stockout_cost": 2251.6,
-        "transport_cost": 4294.0,
-        "total_cost": 20717.2
+        "fill_rate": 0.9478,
+        "stockout_day_rate": 0.0493,
+        "avg_inventory_units": 12004.7,
+        "holding_cost": 25259.2,
+        "stockout_cost": 9072.5,
+        "transport_cost": 10399.7,
+        "total_cost": 44731.3
       },
       "smartstock": {
-        "fill_rate": 0.9764,
-        "stockout_day_rate": 0.0205,
-        "avg_inventory_units": 1443.4,
-        "holding_cost": 12682.2,
-        "stockout_cost": 1811.8,
-        "transport_cost": 4269.6,
-        "total_cost": 18763.6
+        "fill_rate": 0.9633,
+        "stockout_day_rate": 0.0314,
+        "avg_inventory_units": 12211.7,
+        "holding_cost": 24642.7,
+        "stockout_cost": 6932.6,
+        "transport_cost": 10374.0,
+        "total_cost": 41949.3
       },
       "smartstock_vs_classic": {
-        "total_cost_change_pct": -9.43,
-        "fill_rate_change_pts": 0.66,
-        "avg_inventory_change_pct": -10.81
+        "total_cost_change_pct": -6.22,
+        "fill_rate_change_pts": 1.55,
+        "avg_inventory_change_pct": 1.72
       }
     },
     "service_level_0.98": {
       "cover_days": {
-        "fill_rate": 0.9414,
-        "stockout_day_rate": 0.0504,
-        "avg_inventory_units": 1282.5,
-        "holding_cost": 11257.1,
-        "stockout_cost": 4463.9,
-        "transport_cost": 4084.7,
-        "total_cost": 19805.7
+        "fill_rate": 0.9394,
+        "stockout_day_rate": 0.0593,
+        "avg_inventory_units": 12312.8,
+        "holding_cost": 26156.1,
+        "stockout_cost": 10505.6,
+        "transport_cost": 10347.4,
+        "total_cost": 47009.1
       },
       "classic_ss": {
-        "fill_rate": 0.9795,
-        "stockout_day_rate": 0.0181,
-        "avg_inventory_units": 1830.2,
-        "holding_cost": 16025.9,
-        "stockout_cost": 1513.7,
-        "transport_cost": 4386.3,
-        "total_cost": 21925.9
+        "fill_rate": 0.9555,
+        "stockout_day_rate": 0.0399,
+        "avg_inventory_units": 13092.3,
+        "holding_cost": 27489.8,
+        "stockout_cost": 7642.3,
+        "transport_cost": 10559.2,
+        "total_cost": 45691.3
       },
       "smartstock": {
-        "fill_rate": 0.9857,
-        "stockout_day_rate": 0.0113,
-        "avg_inventory_units": 1622.8,
-        "holding_cost": 14263.2,
-        "stockout_cost": 1092.7,
-        "transport_cost": 4356.1,
-        "total_cost": 19712.0
+        "fill_rate": 0.9718,
+        "stockout_day_rate": 0.0233,
+        "avg_inventory_units": 13334.5,
+        "holding_cost": 26871.7,
+        "stockout_cost": 5259.2,
+        "transport_cost": 10537.1,
+        "total_cost": 42668.0
       },
       "smartstock_vs_classic": {
-        "total_cost_change_pct": -10.1,
-        "fill_rate_change_pts": 0.62,
-        "avg_inventory_change_pct": -11.33
+        "total_cost_change_pct": -6.62,
+        "fill_rate_change_pts": 1.63,
+        "avg_inventory_change_pct": 1.85
       }
     }
   }

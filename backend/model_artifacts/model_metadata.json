@@ -1,37 +1,37 @@
 {
-  "model_version": "lightgbm-v1.0",
-  "trained_at": "2026-10-05T06:25:46+00:00",
+  "model_version": "lightgbm-m5-v1.0",
+  "trained_at": "2026-10-05T12:01:30+00:00",
   "algorithm": "LightGBM global direct multi-horizon (mean=poisson, quantiles=P10/P50/P90)",
-  "data_source": "synthetic M5-format data (replace with real M5)",
-  "n_series": 80,
-  "last_observed_date": "2024-06-20",
+  "data_source": "M5 Forecasting Accuracy (CA_1, CA_2, TX_1; top 50 items)",
+  "n_series": 150,
+  "last_observed_date": "2016-04-24",
   "best_params": {
-    "num_leaves": 63,
-    "min_child_samples": 100,
-    "learning_rate": 0.03,
-    "colsample_bytree": 0.6
+    "num_leaves": 127,
+    "min_child_samples": 30,
+    "learning_rate": 0.05,
+    "colsample_bytree": 0.7
   },
   "splits": {
-    "train_origin_max": 702,
+    "train_origin_max": 1712,
     "val_origins": [
-      "2024-01-04",
-      "2024-02-01"
+      "2015-11-08",
+      "2015-12-06"
     ],
     "test_origins": [
-      "2024-02-29",
-      "2024-03-28",
-      "2024-04-25",
-      "2024-05-23"
+      "2016-01-03",
+      "2016-01-31",
+      "2016-02-28",
+      "2016-03-27"
     ]
   },
   "metrics": {
-    "test_wape": 0.7120146126297124,
-    "test_mae": 1.575491262276415,
-    "test_rmse": 2.3416845847240824,
-    "best_baseline": "moving_avg_28",
-    "best_baseline_wape": 0.7468619848144267,
-    "p90_coverage": 0.8973214285714286,
-    "p10_p90_interval_coverage": 0.8619419642857142
+    "test_wape": 0.4218129157999841,
+    "test_mae": 5.093993548164522,
+    "test_rmse": 7.845964840562382,
+    "best_baseline": "moving_avg_7",
+    "best_baseline_wape": 0.46891538306833647,
+    "p90_coverage": 0.9061309523809524,
+    "p10_p90_interval_coverage": 0.780952380952381
   },
   "simulated_parameters_note": "Lead times, costs, inventory and capacities are simulation assumptions, not M5 data."
 }
